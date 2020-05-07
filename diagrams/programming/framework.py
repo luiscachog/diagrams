@@ -4,7 +4,7 @@ from . import _Programming
 
 
 class _Framework(_Programming):
-    _type = "language"
+    _type = "framework"
     _icon_dir = "resources/programming/framework"
 
 
@@ -53,3 +53,5 @@ class Vue(_Framework):
 
 
 # Aliases
+
+angular = Angular

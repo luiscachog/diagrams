@@ -328,5 +328,17 @@ ALIASES = {
             "Databaseservice": "DBService",
             "DatabaseserviceGrey": "DBServiceGrey",
         }
+    },
+    "programming":{
+        "testing": {
+            "Molecule": "molecule"
+        },
+        "framework":{
+            "Angular": "angular"
+        },
+        "language":{
+            "Python": "python"
+        }
+
     }
 }
