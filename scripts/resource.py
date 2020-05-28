@@ -87,6 +87,13 @@ def cleaner_programming(f):
             break
     return f.lower()
 
+def cleaner_operativesystems(f):
+    f = f.replace("-256", "")
+    for p in cfg.FILE_PREFIXES["operativesystems"]:
+        if f.startswith(p):
+            f = f[len(p) :]
+            break
+    return f.lower()
 
 cleaners = {
     "onprem": cleaner_onprem,
@@ -97,6 +104,7 @@ cleaners = {
     "alibabacloud": cleaner_alibabacloud,
     "oci": cleaner_oci,
     "programming": cleaner_programming,
+    "operativesystems": cleaner_operativesystems,
 }
 
 
